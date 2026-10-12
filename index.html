@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birthday Surprise ❤️</title>
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  background: linear-gradient(135deg,#ff4f81,#8e44ad);
+}
+.card {
+  margin: 20px;
+  padding: 28px 20px;
+  border-radius: 25px;
+  background: #ffffff20;
+  box-shadow: 0 8px 30px #0003;
+}
+h1 { font-size: 34px; }
+.heart { font-size: 55px; animation: beat 1s infinite; }
+button {
+  padding: 13px 22px;
+  border: 0;
+  border-radius: 25px;
+  background: white;
+  color: #d63384;
+  font-size: 17px;
+}
+#message { display: none; font-size: 20px; }
+@keyframes beat {
+  50% { transform: scale(1.2); }
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="heart">❤️</div>
+  <h1>Happy Birthday! 🎂</h1>
+  <h2>প্রিয় মানুষ 🌹</h2>
+  <p>আজকের দিনটা তোমার মতোই সুন্দর হোক!</p>
+  <button onclick="surprise()">Open Your Surprise 🎁</button>
+  <p id="message">
+    তুমি সবসময় হাসিখুশি থেকো। ❤️<br>
+    তোমার প্রতিটি স্বপ্ন পূরণ হোক।<br>
+    অনেক অনেক ভালোবাসা ও শুভকামনা! 💖
+  </p>
+  <p>🎈 🎁 🌹 🎉</p>
+</div>
+<script>
+function surprise() {
+  document.getElementById('message').style.display = 'block';
+}
+</script>
+</body>
+</html>
+0
+
